@@ -1,0 +1,243 @@
+html {
+    background-color: #000;
+}
+
+body {
+    background-image: url("../images/people-woman-coffee-meeting.jpg");
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body * {
+    font-family: "GilroyLight", Helvetica, Arial, sans-serif;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.container {
+    max-width: calc(80%);
+    margin: 0 auto;
+    padding: calc(2.5%);
+}
+
+.vertically-centered {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertically-centered > * {
+    margin: auto 0;
+}
+
+#logo,
+#footer-logo {
+    position: relative;
+}
+
+#logo::after,
+#footer-logo::after {
+    position: absolute;
+    top: calc(100% + 0.25vh);
+    content: attr(data-rcno);
+    right: 0;
+    color: white;
+    font-size: 1.5vh;
+    font-family: "GilroyExtraBold", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+#logo {
+    width: 7.5vw;
+    height: 7.5vw;
+    background: rgb(153,0,0);
+    padding: .75vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#footer-logo {
+    width: 5vw;
+    height: 5vw;
+    background: rgb(153,0,0);
+    padding: .5vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+ul.nav {
+    margin-left: 0;
+}
+
+ul.nav,
+ul.nav > li {
+    list-style-type: none;
+}
+
+header ul.nav > li {
+    display: inline-flex;
+    margin-bottom: 0.25em;
+}
+
+header ul.nav > li > a {
+    font-family: "GilroyExtraBold", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.25rem;
+    color: inherit;
+}
+
+#hero {
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+}
+
+#hero * {
+    color: #ffffff;
+}
+
+#locations {
+    min-height: 600px;
+    padding-bottom: 20vh;
+    padding-top: 5vh;
+
+    background-image: url(../images/staticmap-bible-way.png);
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.location {
+    position: relative;
+}
+
+.location::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    top: 100%;
+    border: 20px solid transparent;
+    border-top-color: transparent;
+    border-top-color: rgb(153, 0, 0);
+    margin-left: -20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "GilroyExtraBold", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+.button.big {
+    font-size: 18px;
+    line-height: 46px;
+    height: 48px;
+    padding: 0 48px;
+    font-weight: 200;
+}
+
+.red {
+    background-color: #900;
+}
+
+.gray,
+.big.gray {
+    background-color: rgba(153, 153, 153, 0.5);
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.white-text * {
+    color: white;
+}
+
+.red.button {
+    font-family: "GilroyLight", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.red .red.button {
+    background-color: white;
+    color: #900;
+}
+
+.text-centered * {
+    text-align: center;
+}
+
+.form, .form fieldset {
+    border: none;
+}
+
+.spaced {
+    padding: 2rem;
+}
+
+
+@media screen and (min-resolution: 2dppx) {
+    body {
+        font-size: 95%;
+    }
+
+    #logo {
+        width: 7.5vw;
+        height: 7.5vw;
+        background: rgb(153,0,0);
+        padding: .75vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 801px) {
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    #logo {
+        width: 12.5vw;
+        height: 12.5vw;
+        background: rgb(153,0,0);
+        padding: 1.25vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .col.holding-links {
+        -ms-flex-grow: 3;
+        -webkit-flex-grow: 3;
+        flex-grow: 3;
+    }
+
+    #hero .col.title {
+        -ms-flex-grow: 3;
+        -webkit-flex-grow: 3;
+        flex-grow: 3;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1441px) {
+
+}

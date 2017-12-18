@@ -1,0 +1,152 @@
+body {
+    background-image: url("../images/people-woman-coffee-meeting.jpg");
+    background-position: 50% 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+body * {
+    font-family: "GilroyLight", Helvetica, Arial, sans-serif;
+    color: white;
+    border-radius: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "GilroyExtraBold", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    margin: 1rem 0;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.50em; }
+h3 { font-size: 2.08em; }
+h4 { font-size: 1.73em; }
+h5 { font-size: 1.44em; }
+h6 { font-size: 1.2em; }
+p { font-size: 1em;
+    line-height: 1.15;
+    margin-bottom: 1.15rem; }
+
+.container {
+    display: block;
+    clear: both;
+    float: none;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+button.big {
+    font-size: 18px;
+    line-height: 46px;
+    height: 48px;
+    padding: 0 48px;
+}
+
+.red {
+    background-color: #900;
+}
+
+.red.button {
+    font-family: "GilroyLight", Helvetica, Arial, sans-serif;
+    background-color: #900;
+    color: white;
+}
+
+div.countdown,
+div.countdown > .dial {
+    background: #ffffff;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+div.countdown > .dial {
+    lex-grow: 1;
+    flex-shrink: 1;
+    width: calc(120%);
+    height: 30vh;
+    overflow: hidden;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 -10%;
+    position: relative;
+}
+
+div.countdown > .dial > .rotator {
+    position: absolute;
+    bottom: 0;
+}
+
+div.countdown > .dial > .rotator > img {
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -ms-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.countdown > [id][data-desc] {
+    display: block;
+}
+
+.countdown [id][data-desc]::after {
+    content: attr(data-desc);
+}
+
+footer {
+    margin: 1rem 0;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    body {
+        font-size: 95%;
+    }
+
+    #logo {
+        width: calc(20%);
+        height: auto;
+    }
+
+    #landing-about {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 801px) {
+    #logo {
+        width: calc(10%);
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1441px) {
+
+}
